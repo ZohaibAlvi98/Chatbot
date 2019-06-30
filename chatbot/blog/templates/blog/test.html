@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    </head>
+
+<body>
+<div class="container">
+    <div class="offset-3 col-md-7">
+      <h1> Restaurant Reservation  </h1>
+    </div>
+     <div class="chatlogs">
+         <div class="chat self">
+     {% for chat in data.chats %}
+
+    <p class="chat-message"><br> YOU : {{chat.content1}}</p>
+             </div>
+         <div class="chat bot">
+    <p>BOT : {{chat.content2}}</p>
+    {% endfor %}
+     </div>
+     </div>
+    <div class="offset-3 col-md-6">
+   <form method="post">
+    {% csrf_token %}
+       <div class="form-group">
+    {{ data.form }}
+           </div>
+       <div class="sub">
+            <div class="offset-4 col-md-1">
+    <button type="submit">Send</button>
+</div>
+       </div>
+   </form>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

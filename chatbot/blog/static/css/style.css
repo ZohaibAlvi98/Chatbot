@@ -1,0 +1,80 @@
+* {
+margins: 3px;
+padding: 0;
+font-family: thoma, sans-serif;
+box-sizing: border-box;
+
+}
+
+body {
+
+background: #1ddced;
+}
+
+.containers {
+
+   max-width: 500 !important;
+   margin-top: 10%;
+   height 90px;
+   font-family: sans-serif;
+   background: #fff;
+   padding: 10px;
+   margins: auto;
+   box-shadow: 0 3px #ccc;
+   letter-spacing: 1.5px;
+}
+
+.chatlogs{
+   padding: 70px;
+   width: 50%;
+   height: 470px;
+   margin: 20px auto;
+   background: #eee;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+
+.chat .chat-message {
+   width: 70%
+   padding: 50px;
+   margins: 5px 10px 0;
+   background: #1ddced;
+   color: #fff
+   font-size: 18px;
+   border-radius: 10px;
+
+}
+.bot .chat-message{
+background: #1adda4;
+
+
+}
+
+.self .chat-message{
+background: #1adda4;
+}
+.chatlogs::-webkit-scrollbar{
+ width: 10px;
+}
+.chatlogs::-webkit-scrollbar-thumb{
+border-radius: 5px;
+background: rgba(0,0,0,.1);
+}
+.sub button {
+background: green;
+padding: 3px 18px;
+height: 40px;
+font-size: 23px;
+color: #fff;
+border: none;
+margin: 0 7px;
+border-radius: 5px;
+box-shadow: 0 3 px 0 #0eb2c1;
+cursor: pointer;
+}
+h1 {
+color: purple;
+margin 0;
+padding: 5px 18px;
+
+}
